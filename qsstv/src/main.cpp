@@ -74,7 +74,7 @@ int main( int argc, char ** argv )
     if(!tm.isActive()) break;
    }
   splash.finish(mainWindowPtr);
-  mainWindowPtr->show();
+  mainWindowPtr->showMinimized();
   mainWindowPtr->startRunning();
   result=app.exec();
   globalEnd();
