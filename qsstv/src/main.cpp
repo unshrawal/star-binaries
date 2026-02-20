@@ -76,6 +76,7 @@ int main( int argc, char ** argv )
   splash.finish(mainWindowPtr);
   mainWindowPtr->show();
   mainWindowPtr->startRunning();
+  QTimer::singleShot(300, mainWindowPtr, &QWidget::showMinimized);
   result=app.exec();
   globalEnd();
   return result;
